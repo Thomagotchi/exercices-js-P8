@@ -13,5 +13,6 @@ function convertToBinary() {
 
   // Conversion du nombre décimal en chaîne binaire
   // https://stackoverflow.com/questions/9939760/how-do-i-convert-an-integer-to-binary-in-javascript
-  binaryResult.innerText = (decimalInput >>> 0).toString(2);
+  const decimalNumber = parseInt(decimalInput, 10);
+  binaryResult.textContent = decimalNumber.toString(2);
 }
