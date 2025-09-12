@@ -1,7 +1,9 @@
 function calculateAverage(numbers) {
+  // Si il n'y a pas de nombres ou que le tableau est vide, on retourne un message d'erreur
   if (!numbers || numbers.length === 0) {
     return "No numbers to calculate average";
   } else {
+    // La fonction reduce permet de calculer la somme des nombres du tableau
     return numbers.reduce((sum, number) => sum + number, 0) / numbers.length;
   }
 }

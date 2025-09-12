@@ -2,6 +2,8 @@ function calculate(a, b, operator) {
   a = Number(a);
   b = Number(b);
 
+  // L'operateur === est un operateur de comparaison qui permet de comparer deux valeurs
+  // Je ne sais pas si c'est possible d'injecter directement l'operateur dans la fonction
   if (operator === "+") {
     return a + b;
   } else if (operator === "-") {
